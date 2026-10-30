@@ -9,3 +9,5 @@
 | Q3 | What exactly does the AI assistant do in v1? | Biggest scope risk before launch | Define 1–2 concrete use cases, cut the rest to v2 |
 | Q4 | How do we measure "better match between plan and energy"? | It's our main success metric (see `vision.md`) | Design the in-app check-in question |
 | Q5 | What's the minimum for launch? | Avoid polishing forever | Agree MVP scope: Today screen + onboarding + calendar |
+| Q6 | How does each setting (health conditions, contraception, diet) change the recommendations? | Settings exist in the app, but their effect on guidance isn't specified | Define rules per setting, review with an expert |
+| Q7 | Where exactly is the line between wellbeing and medical, given the health-condition settings? | Affects positioning (D2), copy and regulatory requirements | Decide before launch; revisit D2 if needed |

@@ -26,7 +26,7 @@ She:
 - is frustrated by plans that ignore her natural energy dips
 - wants practical, daily guidance — not theory
 
-**Not (yet) for:** people looking for medical diagnosis, fertility/conception tracking, or managing a health condition.
+**Not for:** people looking for medical diagnosis, treatment, or fertility/conception tracking.
 
 ## What Tida does
 
@@ -50,6 +50,8 @@ This is a deliberate choice (see `decisions.md` → D2). It shapes copy, feature
 - ❌ Not medical advice or diagnosis
 - ❌ Not a contraception or fertility tool
 - ❌ Not a generic workout app with a calendar bolted on
+
+**Health, nutrition and contraception settings:** the user can tell Tida about health conditions, diet and contraception. Tida uses this only as context for its recommendations — it never diagnoses, treats, or works as a contraception or fertility tool. How each setting changes the recommendations: see `open-questions.md` → Q6.
 
 ## How we'll know it works
 
