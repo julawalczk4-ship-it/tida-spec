@@ -11,3 +11,4 @@
 | Q5 | What's the minimum for launch? | Avoid polishing forever | Agree MVP scope: Today screen + onboarding + calendar |
 | Q6 | How does each setting (health conditions, contraception, diet) change the recommendations? | Settings exist in the app, but their effect on guidance isn't specified | Define rules per setting, review with an expert |
 | Q7 | Where exactly is the line between wellbeing and medical, given the health-condition settings? | Affects positioning (D2), copy and regulatory requirements | Decide before launch; revisit D2 if needed |
+| Q8 | How do we map the 28-day phase model to shorter or longer cycles? | Most users don't have exactly 28 days — wrong mapping = wrong guidance | Decide: scale all phases proportionally, or keep the luteal phase fixed and stretch the follicular phase |
