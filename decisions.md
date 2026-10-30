@@ -64,3 +64,15 @@
 **Trade-off:** More complex recommendation logic; phase alone isn't enough.
 
 **Status:** 🔄 In the spec, to be built (see `flows/daily-recommendation.md`).
+
+---
+
+## D5 — A late period is never treated as a new cycle
+
+**Decision:** If more days have passed than the cycle length and the user hasn’t logged a new period, the app shows the period as late instead of silently starting a new cycle.
+
+**Why:** Found in the pre-launch code audit — the app showed ‘day 12 of a new cycle’ instead of ‘12 days late’. For a cycle app this is a factual error users notice immediately and it breaks trust.
+
+**Trade-off:** One more state in the logic and UI. The ‘late’ message must stay neutral and non-medical (see D2).
+
+**Status:** ✅ Spec updated · 🔄 code fix in lib/cycleMetrics.ts to follow.
