@@ -75,4 +75,4 @@
 
 **Trade-off:** One more state in the logic and UI. The ‘late’ message must stay neutral and non-medical (see D2).
 
-**Status:** ✅ Spec updated · 🔄 code fix in lib/cycleMetrics.ts to follow.
+**Status:** ✅ Spec updated · ✅ Fixed in code (`lib/cycleMetrics.ts`, Today screen, PL/EN copy) and verified in tests + iOS simulator.
