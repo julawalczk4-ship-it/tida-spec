@@ -19,12 +19,12 @@ When the user opens Tida, within a few seconds she knows **what to do today** fo
 
 | Phase | Training direction | Recovery direction |
 |---|---|---|
-| Menstrual | Lighter movement, mobility, yoga | Rest, warmth, sleep |
+| Menstrual | Low-intensity metabolic work (e.g. easy aerobic base). No technical skill training. Not "rest by default". | Sleep and warmth; otherwise normal recovery |
 | Follicular | Building intensity, try new things | Normal |
 | Ovulatory | Peak — strength, intense cardio | Normal |
 | Luteal | Steady, moderate; lower intensity late in phase | More recovery, sauna, sleep |
 
-> ⚠️ Content and exact day ranges to be validated with an expert (see `open-questions.md` → Q1).
+> Source: hormone & training-potential table from my master's thesis research on women in sport. Exact day ranges and content to be reviewed by an expert (see open-questions.md → Q1).
 
 ## Steps
 
