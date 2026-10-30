@@ -46,7 +46,8 @@ When the user opens Tida, within a few seconds she knows **what to do today** fo
 | Case | Behaviour |
 |---|---|
 | No cycle data yet | Show general guidance + prompt to add cycle info |
-| Cycle is late / irregular | ⚠️ Open question — see Q2 |
+| Period is late (days since last period > cycle length) | Do NOT start a new cycle. Show ‘Your period is X days late’ and a button to log a new period. Keep recommendations from the late luteal phase. See D5. |
+| Irregular cycles | ⚠️ Open question — see Q2 |
 | User skipped check-in | Use phase defaults only |
 
 ## Done when
@@ -55,3 +56,4 @@ When the user opens Tida, within a few seconds she knows **what to do today** fo
 - [ ] All 3 cards show phase-specific content
 - [ ] Low-energy check-in visibly changes the recommendation
 - [ ] Empty state works with no data
+- [ ] Late period handled: cycle 28 days, last period 40 days ago → shows ‘period is 12 days late’, not ‘day 12 of a new cycle’
