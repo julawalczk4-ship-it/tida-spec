@@ -76,3 +76,20 @@
 **Trade-off:** One more state in the logic and UI. The ‘late’ message must stay neutral and non-medical (see D2).
 
 **Status:** ✅ Spec updated · ✅ Fixed in code (`lib/cycleMetrics.ts`, Today screen, PL/EN copy) and verified in tests + iOS simulator.
+
+---
+
+## D6 — During the period, Tida doesn't default to "rest"
+
+**Decision:** In the menstrual phase, Tida recommends low-intensity metabolic training and skipping technical skill work — not rest or "just yoga".
+
+**Why:**
+- Most cycle apps tell women to rest during their period. That doesn't work for competitive athletes, or for women with demanding jobs.
+- Research I found while writing my master's thesis suggests that dropping technical skill training while bleeding and focusing on low-intensity metabolic work still gives a high-quality session, with lower injury risk.
+- This is Tida's core difference from other cycle apps.
+
+**Trade-off:**
+- Goes against what users may expect from other apps — the copy must explain *why*.
+- It's still a suggestion: the daily check-in overrides it (see D4).
+
+**Status:** ✅ Spec updated · 🔄 recommendation content to follow.
