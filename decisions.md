@@ -93,3 +93,82 @@
 - It's still a suggestion: the daily check-in overrides it (see D4).
 
 **Status:** ✅ Spec updated · 🔄 recommendation content in the app to follow.
+
+---
+
+## D7 — Protect Intellectual Property (Local Teasers vs Remote Data)
+
+**Decision:** The app binary (APK/IPA) contains only small "freemium" teasers of the Knowledge Base and Recipes. Full catalogs live strictly on Supabase and are fetched only for authenticated users.
+
+**Why:**
+- Protects the core IP from being extracted by reverse-engineering the app binary.
+- Keeps the initial app download size small and lightweight.
+
+**Trade-off:**
+- Requires an internet connection to read the full content.
+- We need robust caching logic to handle offline states gracefully.
+
+**Status:** ✅ Built and working.
+
+---
+
+## D8 — Absolute Data Privacy (Row Level Security)
+
+**Decision:** Strict Supabase RLS (Row Level Security) policies mandate that a user can only read, update, or delete their own health and cycle logs. Knowledge Base articles are strictly read-only.
+
+**Why:**
+- Tida processes highly sensitive health data. Absolute isolation at the database level is non-negotiable for user trust.
+- It is a foundational requirement for GDPR compliance and Apple's privacy review.
+
+**Trade-off:**
+- More complex database setup and local testing.
+- Requires careful handling of authentication states in the client.
+
+**Status:** ✅ Built and working.
+
+---
+
+## D9 — Secure AI Architecture & Guardrails
+
+**Decision:** OpenAI API calls run strictly on the backend via Supabase Edge Functions. The AI System Prompt strictly forbids medical diagnoses and relies on injected background context (cycle phase, athlete mode).
+
+**Why:**
+- Hides the OpenAI API key from the client app, preventing quota theft.
+- Guarantees the AI behaves like a holistic coach, not a doctor (crucial for keeping our non-medical positioning from D2).
+
+**Trade-off:**
+- Costs us execution time (Edge Function latency) compared to direct client calls.
+- Requires maintaining separate server-side code in Deno/TypeScript.
+
+**Status:** ✅ Built and working.
+
+---
+
+## D10 — Opt-in Integrations via Apple Health / Health Connect
+
+**Decision:** Tida reads external device data (Garmin, Whoop, Strava) exclusively through Apple HealthKit / Google Health Connect. We do not integrate direct third-party APIs.
+
+**Why:**
+- Keeps the codebase lightweight and respects user privacy by using native OS aggregators.
+- External data acts as an "invisible boost" to recommendations, meaning the app remains 100% fully functional without a smartwatch.
+
+**Trade-off:**
+- We rely on the OS aggregators and cannot access raw, proprietary metrics that aren't shared with Apple/Google.
+
+**Status:** 🔄 In the spec, to be built.
+
+---
+
+## D11 — Freemium & Subscription Model (Paywall)
+
+**Decision:** RevenueCat handles subscriptions. Free accounts get basic tracking and teasers; PRO status (`is_pro`) unlocks full catalogs. 50% of revenue goes to women's health research.
+
+**Why:**
+- Offloads receipt validation and app store compliance to a reliable third party (RevenueCat).
+- The 50% charity split is a core brand pillar and must be clearly communicated on the paywall.
+
+**Trade-off:**
+- RevenueCat takes a small percentage of sales.
+- UI logic must clearly and gracefully gate premium features without frustrating the user.
+
+**Status:** 🔄 In the spec, to be built.
