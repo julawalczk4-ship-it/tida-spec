@@ -1,5 +1,13 @@
 # Vision
 
+## Why Tida exists
+
+I was a competitive kayaker for over ten years, training in a group with men. Women were often treated like weaker boys — not like professionals with a different instruction manual.
+
+While writing my master's thesis on gender equality in sport, I found research mapping hormones and training potential to each phase of the cycle. It showed that women can train smarter — not less — when training follows the cycle.
+
+Tida turns that into practical, daily guidance.
+
 ## The problem
 
 Most training and nutrition plans assume a woman's body is the same every day of the month. It isn't. Energy, strength and recovery shift across the cycle.
@@ -11,7 +19,7 @@ The result for active women:
 
 ## Who Tida is for
 
-**Primary user:** an active woman who already trains — gym, running, outdoor sports — and wants to train smarter and live in tune with her body.
+**Primary user:** an active woman who trains seriously — from gym and running to outdoor and competitive sport — and wants to train smarter, in tune with her body. Including women who can't afford to "just rest" for a few days every month: athletes and women with demanding jobs.
 
 She:
 - is aware and curious about her body, not a beginner to exercise
