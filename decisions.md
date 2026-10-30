@@ -81,15 +81,15 @@
 
 ## D6 — During the period, Tida doesn't default to "rest"
 
-**Decision:** In the menstrual phase, Tida recommends low-intensity metabolic training and skipping technical skill work — not rest or "just yoga".
+**Decision:** Tida follows the 7-phase model in `flows/daily-recommendation.md`. During the period: days 1–2 are regeneration without technical or precision work; days 3–5 are metabolic training (anaerobic, lactate-based and strength work) — not rest or "just yoga".
 
 **Why:**
 - Most cycle apps tell women to rest during their period. That doesn't work for competitive athletes, or for women with demanding jobs.
-- Research I found while writing my master's thesis suggests that dropping technical skill training while bleeding and focusing on low-intensity metabolic work still gives a high-quality session, with lower injury risk.
+- The research behind the model shows that removing technical and precision work while bleeding — when reaction time is slower — lowers injury risk, while metabolic and strength work still gives a high-quality session.
 - This is Tida's core difference from other cycle apps.
 
 **Trade-off:**
-- Goes against what users may expect from other apps — the copy must explain *why*.
+- Goes against what users expect from other apps — the copy must explain *why*.
 - It's still a suggestion: the daily check-in overrides it (see D4).
 
-**Status:** ✅ Spec updated · 🔄 recommendation content to follow.
+**Status:** ✅ Spec updated · 🔄 recommendation content in the app to follow.
