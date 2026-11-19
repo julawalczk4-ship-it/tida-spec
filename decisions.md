@@ -172,3 +172,33 @@
 - UI logic must clearly and gracefully gate premium features without frustrating the user.
 
 **Status:** 🔄 In the spec, to be built.
+
+---
+
+## D12 — Silent vs. Explicit Health Personalization in UI
+
+**Decision:** Sensitive or psychiatric/hormonal conditions (e.g., depression, PMDD, severe PMS, endometriosis, Hashimoto's, thyroid issues, RED-S, FHA, perimenopause) remain **silent** in the UI: the engine uses them in the background for ranking and contraindications, but never displays their names on cards. Only strictly dietary/metabolic conditions (`PCOS`, `Insulin Resistance`, `Anemia`, `IBS/SIBO`) can show an explicit "Matched" badge.
+
+**Why:**
+- Protects user privacy and emotional wellbeing — displaying labels like "Matched: Depression" on food or training cards feels clinical, intrusive, and breaks our non-medical positioning (D2).
+- Users with metabolic or gut conditions actively look for confirmation that a meal is safe for them.
+
+**Trade-off:**
+- Users with silent conditions don't see an explicit badge explaining why a specific meal was ranked higher, making the personalization feel more subtle.
+
+**Status:** ✅ Built and working.
+
+---
+
+## D13 — Herbs & Food Pharmacy Pregnancy & Continuous Safety
+
+**Decision:** In `PREGNANCY`, Nutrition hides both `HerbalRitualsSection` and `FoodPharmacy` (seed cycling), showing a single medical consultation note. Continuous physiology (contraception, menopause, `no_data`, postpartum/recovery) maps herbal and Food Pharmacy phases to **Uniwersalna** rather than defaulting to Folikularna. `userContraindicationTokens` enforces `Połóg` and `Karmienie` at the engine level, and raspberry leaf explicitly blocks `Ciąża` and `Starania o ciążę`.
+
+**Why:**
+- Prevents seed cycling (phytoestrogenic seeds) and uterine-relaxing herbs (raspberry leaf) from slipping through during pregnancy, trying to conceive, or postpartum.
+- Eliminates false ovarian phase context for users on hormonal contraception or in menopause.
+
+**Trade-off:**
+- Pregnant users see fewer interactive cards in Nutrition, prioritizing safety over catalog breadth.
+
+**Status:** ✅ Built and working.
